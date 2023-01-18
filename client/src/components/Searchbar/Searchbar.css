@@ -1,0 +1,52 @@
+:root{
+    --font-title: 'Cinzel', serif;;
+    --font-subtitle: 'EB Garamond', serif;
+}
+
+.formulario {
+    display: flex;
+    gap: 50px;
+    background-color: burlywood;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 20px;
+    flex-direction: row;
+
+}
+
+.title-search {
+    font-family: var(--font-title);
+    font-weight: 600;
+}
+
+.searchbar {
+padding: 5px;
+border-radius: 10px;
+font-family: var(--font-subtitle);
+text-align: center;
+}
+
+.buscar{
+    transition: 0.5s all ease;
+    cursor: pointer;
+    width: 80px;
+    
+}
+
+.buscar:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.all-recipes:hover{
+    background-color: black;
+    color: white;
+}
+
+.sorted-alpha{
+    width: 180px;
+}

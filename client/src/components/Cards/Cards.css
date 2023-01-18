@@ -1,0 +1,26 @@
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+    place-items: center;
+    transition: 0.5s all ease;
+}
+
+.search-container {
+    display: grid;
+    place-items: center;
+    margin: 40px;
+}
+
+.button-page {
+    display: grid;
+    place-content: center;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 90px;
+}

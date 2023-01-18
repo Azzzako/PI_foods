@@ -1,0 +1,42 @@
+.contenedor_de_receta{
+    display: grid;
+    place-items: center;
+    background-color: antiquewhite;
+    margin: 5% 10%;
+    border-radius: 40px;
+    opacity: 90%;
+    box-sizing: border-box;
+}
+
+.nombre_receta{
+    font-family: var(--font-title);
+    font-size: xxx-large;
+}
+
+.imagen_receta{
+    border-radius: 8px;
+    width:30%;
+}
+
+.summary{
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 22px;
+    width: 90%;
+    padding: 10px;
+}
+
+.diet_type{
+    font-size: 25px;
+    font-family: var(--font-title);
+}
+
+.score{
+    font-size: 25px;
+    font-family: var(--font-title);
+}
+
+.lista_de_pasos{
+    font-family: var(--font-title);
+    font-weight: 600;
+}

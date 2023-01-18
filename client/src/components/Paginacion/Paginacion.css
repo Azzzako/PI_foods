@@ -1,0 +1,21 @@
+.container-page{
+    display: flex;
+    gap: 10px;
+}
+
+.botones{
+    width: 40px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    transition: 0.4s all ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.botones:hover{
+    color: black;
+    background-color: white;
+}

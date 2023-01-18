@@ -1,0 +1,55 @@
+:root {
+    --font-title: 'PT Sans Narrow', sans-serif;;
+    --font-subtitle: 'EB Garamond', serif;
+}
+
+.container-landing{
+    display: grid;
+    place-items: center;
+}
+
+.saludo{
+    font-family: var(--font-subtitle);
+    font-size: 100px;
+    color: black;
+    position: relative;
+    top: 100px;
+}
+
+.contain-mensaje{
+    background-color: aliceblue;
+    border-radius: 90px ;
+    opacity: 80%;
+    width: 90%;
+    box-sizing: border-box;
+    position: relative;
+    top: 50px;
+}
+
+.mensaje{
+    font-family: var(--font-subtitle);
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+
+.boton{
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    width: 250px;
+    border-radius: 20px ;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+    transition: 0.5s all ease;
+    font-family: var(--font-subtitle);
+    font-size: 20px;
+}
+
+
+.boton:hover{
+    background-color: black;
+    color: white;
+}

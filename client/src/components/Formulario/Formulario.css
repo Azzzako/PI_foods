@@ -1,0 +1,28 @@
+.create-form{
+    background-color: #fff;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37 rgba(0, 0, 0, .8);
+    padding: 0.8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: gray ;
+}
+
+.title-form{
+    display: grid;
+    place-content: center;
+    font-family: var(--font-title);
+}
+
+.create-form label, .create-form input, .create-form select{
+    padding: 5px;
+}
+
+
+
+
