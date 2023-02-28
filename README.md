@@ -16,4 +16,4 @@ Tambien podemos crear nuevas recetas y asignarle un valor a cada caracteristica 
  HTML
  CSS
  
- ![Demo](https://raw.githubusercontent.com/azzzako/todo-machine/main/client/imagesproject/create.png)
+ ![Demo](https://raw.githubusercontent.com/azzzako/PI_foods/main/client/imagesproject/create.png)
