@@ -6,15 +6,15 @@ Tambien podemos crear nuevas recetas y asignarle un valor a cada caracteristica 
 
 # Tecnologias usadas en la Aplicacion
 
- JavaScript
- React
- Redux
- Node.js
- Express
- Sequelize
- Postgres
- HTML
- CSS
+- JavaScript
+- React
+- Redux
+- Node.js
+- Express
+- Sequelize
+- Postgres
+- HTML
+- CSS
  
  # Demo
  
@@ -24,7 +24,7 @@ Tambien podemos crear nuevas recetas y asignarle un valor a cada caracteristica 
  
 # En local
 
-Clona el repositorio.
-Instala dependencias
-Abre una terminal desde api y otra desde client
-Realiza npm start en ambas consolas y ya tienes el proyecto corriendo en localhost
+- Clona el repositorio.
+- Instala dependencias
+- Abre una terminal desde la caperta api y otra desde la carpeta client
+- Realiza npm start en ambas consolas y ya tienes el proyecto corriendo en localhost
