@@ -54,4 +54,12 @@ foodRouter.post("/", async (req, res) => {
     res.status(200).send(newRecipe)
 })
 
+foodRouter.delete("/:id", async (req, res) => {
+    const {id} = req.params
+    
+    if(id) {
+        Recipe.destroy(id)
+    }
+})
+
 module.exports = { foodRouter }

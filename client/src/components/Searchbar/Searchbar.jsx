@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { getAllRecipes, getRecipeByName, recipeAlpha, recipeAlphaRev, recipeByDiet, scoreOrder, scoreOrderRev } from "../../redux/actions";
 import "./Searchbar.css"
 
-export const Searchbar = () => {
+export const Searchbar = ({setCurrentPage}) => {
 
     const [recipe, setRecipe] = useState('')
     const [filter, setFilter] = useState('')
@@ -37,6 +37,9 @@ export const Searchbar = () => {
         } else if (diet === '') {
             dispatch(getAllRecipes())
         }
+
+        setCurrentPage(1)
+        
     }, [dispatch, filter, diet])
 
     console.log(diet);

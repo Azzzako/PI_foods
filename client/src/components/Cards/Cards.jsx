@@ -49,6 +49,7 @@ export const Cards = () => {
             
         <div className="search-container">
             <Searchbar
+            setCurrentPage={setCurrentPage}
             />
         </div>
         {load ? (

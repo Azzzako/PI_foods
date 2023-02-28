@@ -46,7 +46,6 @@ const getDiets = async () => {
         diets: diets5
     }
 
-
 }
 
 

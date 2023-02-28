@@ -2,12 +2,14 @@ import React from "react";
 import { Cards } from "../Cards/Cards";
 import { Navbar } from "../Navbar/Navbar";
 
-export const Home = () => {
+export const Home = ({setCurrentPage}) => {
 
     return (
         <div>
             <Navbar/>
-          <Cards/>  
+          <Cards
+          setCurrentPage={setCurrentPage}
+          />  
         </div>
         
     )

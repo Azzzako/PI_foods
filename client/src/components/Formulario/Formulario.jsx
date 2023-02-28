@@ -13,8 +13,8 @@ export const Form = () => {
         name: "",
         summary: "",
         healthScore: "",
-        steps: [],
-        dietType: [],
+        steps: "",
+        dietType: "",
     });
 
 
@@ -28,32 +28,34 @@ export const Form = () => {
 
     const submitForm = (e) => {
         e.preventDefault()
-        var form = true
+        let form = false
 
-        if (dataForm["name"].length < 1) {
-            form = false
-        }
-
-        if (dataForm.summary.length < 1) {
-            form = false
-        }
-
-        if (dataForm.healthScore > 100 || dataForm.healthScore < 0) {
+        if (!dataForm.name) {
+            return alert("insert name recipe")
+        } else if (!dataForm.summary) {
+            return alert("insert summary")
+        } else if (!dataForm.healthScore || dataForm.healthScore < 0 || dataForm.healthScore > 100) {
             return alert("Healthscore only 1 to 100")
-        }
-
-        if (dataForm.steps) {
+        } else if (!dataForm.steps) {
+            return alert("Preparation pls")
+        } else if (!dataForm.dietType) {
+            return alert("Select diet type")
+        } else {
             dataForm.steps = [dataForm.steps]
-        }
-        if (dataForm.dietType) {
             dataForm.dietType = [dataForm.dietType]
+            form = true
         }
 
         if (form) {
             dispatch(createRecipe(dataForm))
                 .then(() => alert("Recipe added"))
-        } else {
-            return alert("Complete form")
+            setDataForm({
+                name: "",
+                summary: "",
+                healthScore: "",
+                steps: "",
+                dietType: "",
+            })
         }
 
     }
@@ -78,7 +80,7 @@ export const Form = () => {
                     <textarea value={dataForm.summary} type="text" name="summary" id="summary" onChange={setDataHandler} />
 
                     <label >Health Score:</label>
-                    <input placeholder="1 to 100" value={dataForm.healthScore} type="number" name="healthScore" id="healthScore" onChange={setDataHandler} />
+                    <input placeholder="insert 1 to 100" value={dataForm.healthScore} type="number" name="healthScore" id="healthScore" onChange={setDataHandler} />
 
                     <label >Preparation:</label>
                     <input value={dataForm.steps} type="text" name="steps" id="steps" onChange={setDataHandler} />
