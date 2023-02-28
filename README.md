@@ -22,3 +22,9 @@ Tambien podemos crear nuevas recetas y asignarle un valor a cada caracteristica 
  ![Demo](https://raw.githubusercontent.com/azzzako/PI_foods/main/client/imagesproject/detail.png)
  ![Demo](https://raw.githubusercontent.com/azzzako/PI_foods/main/client/imagesproject/create.png)
  
+# En local
+
+Clona el repositorio.
+Instala dependencias
+Abre una terminal desde api y otra desde client
+Realiza npm start en ambas consolas y ya tienes el proyecto corriendo en localhost
